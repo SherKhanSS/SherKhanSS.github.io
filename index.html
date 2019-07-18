@@ -2,349 +2,227 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <title>Tehdetal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
-    <header class="header">
-      <div class="header-container">
-        <div class="top-container">
-      <h1 class="visually-hidden">Техномарт</h1>
-      <div class="logo">
-      <a class="">
-        <svg width="111" height="18">
-          <use xlink:href="img/sprite.svg#logo-technomart"></use>
-        </svg>
-      </a>
-      </div>
-            <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <label class="top-menu-search">
-                <input class="top-menu-input" type="search" name="search" aria-label="Search through site content" placeholder="Поиск:">
-              </label>
-            </form>
-          <a class="top-menu-link" href="#">Закладки: 0</a>
-          <a class="top-menu-link-cart" href="#">Корзина: 0</a>
-          <!-- <div class="checkout"> -->
-          <a class="top-menu-link-checkout" href="#">Оформить заказ</a>
-        <!-- </div> -->
-      </div>
-      </div>
-      <div class="info-end-main-nav">
-      <section class="info">
-         <div class="cutaway">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</div>
-         <div class="telephone-and-address">
-           <a class="telephone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-           <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-         </div>
-           <div class="user-navigation">
-             <a class="log-in" href="#">Войти</a>
-             <a class="registration" href="#">Регистрация</a>
-           </div>
+
+    <header class="page-header">
+      <div class="adress__wrapper">
+      <section class="page-header__adress">
+        <div class="page-header__logo logo">
+          <div class="logo__name">ИП Сухих И.В.</div>
+          <div class="logo__description">Металлообработка в Москве <br>и Московской области</div>
+        </div>
+        <div class="page-header__phone phone">
+          <!-- <b class="phone__text">Звоните:</b> -->
+          <a class="phone__link" href="tel:+74993908712">+7 (499) 390-87-12</a>
+          <a class="phone__link" href="tel:+79260516058">+7 (926) 051-60-58</a>
+          <a class="phone__link" href="tel:+79267123467">+7 (926) 712-34-67</a>
+        </div>
+        <div class="page-header__email email">
+          <!-- <b class="email__text">Пишите:</b> -->
+          <a class="email__link" href="mailto:info@tehdetal.su">info@tehdetal.su</a>
+          <form class="search" action="#" method="get">
+            <label class="top-menu-search">
+              <input class="top-menu-input" type="search" name="search" aria-label="Search through site content" placeholder="Поиск:">
+            </label>
+          </form>
+        </div>
       </section>
-      <nav class="main-nav">
-        <ul class="site-navigation">
-          <li><a class="main-nav-link" href="#">Главная</a></li>
-          <li><a class="main-nav-link" href="#">Компания</a></li>
-          <li><a class="main-nav-link" href="catalog.html">Каталог</a></li>
-          <li><a class="main-nav-link" href="#">Новости</a></li>
-          <li><a class="main-nav-link" href="#">Спецпредложения</a></li>
-          <li><a class="main-nav-link" href="#">Доставка</a></li>
-          <li><a class="main-nav-link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
     </div>
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <div class="nav__wrapper">
+        <button class="main-nav__toggle" type="button"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+
     </header>
-    <main class="content">
-      <section class="company-services container">
-        <div class="company-services-top">
-          <div class="services-item materials">
-            <div class="services-item-title">Материалы</div>
-            <a class="services-link" href="#">на любой вкус</a>
-          </div>
-          <div class="services-item instruments">
-            <div class="services-item-title">Инструмент</div>
-            <a class="services-link" href="#">на все случаи</a>
-          </div>
-          <div class="services-item equipment">
-            <div class="services-item-title">Техника</div>
-            <a class="services-link" href="#">для стройки</a>
-          </div>
-        </div>
-        <div class="slider-company-services-right">
 
-          <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide slide">
-                  <h3 class="visually-hidden">Реклама дрели</h3>
-                  <span class="slider-perforator">Дрели</span>
-                  <span class="slider-joy">Соседям на радость!</span>
-                  <a class="slide-button" href="#">Открыть каталог</a>
-                </li>
-                <li class="glide__slide slide">
-                  <h3 class="visually-hidden">Реклама перфоратора</h3>
-                  <span class="slider-perforator">Перфораторы</span>
-                  <span class="slider-joy">Настоящие мужские игрушки</span>
-                  <a class="slide-button" href="#">Открыть каталог</a>
-                </li>
+    <main class="page-main">
+      <section class="description">
+        <h1 class="description__head">ИЗГОТОВЛЕНИЕ ДЕТАЛЕЙ НА ПРОФЕССИОНАЛЬНОМ ОБОРУДОВАНИИ</h1>
+        <div class="description__text">
+          Наша компания специализируется на изготовлении малогабаритных и среднегабаритных деталей методом механической обработки.
+          Выполняем тококарные,фрезерные, долбежные и сверлильные работы на станках
+        </div>
+      </section>
+        <div class="main__wrapper">
+          <div class="services__wrapper">
+        <section class="services">
+          <h2 class="services__head">Мы предлагаем:</h2>
+          <ol>
+            <li><a href="#tooling">
+              Механическая обработка
+            </a></li>
+            <li><a href="#gear-cutting">
+              Зуборезные работы
+            </a></li>
+            <li><a href="#locksmith-work">
+              Слесарные работы
+            </a></li>
+            <li><a href="#">
+              Сварка аргоном
+            </a></li>
+            <li><a href="#">
+              Изготовление металлоконструкций
+            </a></li>
+            <li><a href="#">
+              Химикотермическая обработка сталей и цветных металлов
+            </a></li>
+          </ol>
+        </section>
+
+        <section class="facilities">
+          <h2 class="visually-hidden"></h2>
+            <p>Наша компания специализируется на изготовлении малогабаритных и среднегабаритных деталей методом механической обработки.
+              Выполняем тококарные,фрезерные, долбежные и сверлильные работы на станках:</p>
+            <p>Токарнае:16К25; ДИП300; ДИП500</p>
+            <p>Фрезерные:6р13;676п</p>
+            <p>Долбежный: Hahn & Kolb</p>
+            <p>Радиально сверлильные:2н125;2к522;</p>
+            <p>Токарная группа станков позволяет обрабатывать детали диаметром до 700мм над станиной и длиной до 5000м.
+            Изготавливаем от 1-ой детали и до больших партий по Вашим образцам, эскизам и чертежам.
+            Быстрый предварительный расчёт стоимости изготовления деталей, цены не высокие.</p>
+            <p>Возможен наличный и безналичный расчёт.</p>
+        </section>
+
+        <section class="gallery">
+          <h2 class="visually-hidden"></h2>
+            <div class="gallery__img">
+              <img src="img/1.jpg">
+            </div>
+            <div class="gallery__img">
+              <img src="img/4.jpg">
+            </div>
+            <div class="gallery__img">
+              <img src="img/3.jpg">
+            </div>
+            <div class="gallery__img">
+              <img src="img/2.jpg">
+            </div>
+        </section>
+
+
+        <section class="option">
+          <a class="option__headline" name="tooling">Механическая обработка</a>
+            <div class="option__description">
+              <ul>
+ 	              <li>Обработка неметаллических материалов</li>
+ 	              <li>Обработка алюминиевых сплавов</li>
+ 	              <li>Обработка нержавеющих сталей</li>
+              	<li>Обработка бронзы</li>
+              	<li>Обработка латуни</li>
+ 	              <li>Обработка фторопласта</li>
+                <li>Обработка текстолита</li>
+ 	              <li>Токарные работы</li>
               </ul>
-
-              <div class="glide__arrows slider-buttons" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left btn-prev" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right btn-next" data-glide-dir=">">next</button>
-              </div>
-
-              <div class="glide__bullets" data-glide-el="controls[nav]">
-                <button class="glide__bullet" data-glide-dir="=0"></button>
-                <button class="glide__bullet" data-glide-dir="=1"></button>
-              </div>
+              <div>Обработка мелких деталей и сборочных единиц различной сложности и высокой степени чистоты поверхности, диаметром до 500 мм и длиной до 3000 мм. Мы осуществляем токарные работы на заказ по имеющемуся у Вас чертежу или образцу изделия. Все работы производятся как на универсальных, так и на станках с ЧПУ.</div>
+              <div>Изготовление сборочных единиц</div>
+              <h4>Токарная обработка деталей</h4>
+              <div>Токарное оборудование производит обработку конструкционной и нержавеющей стали, цветных металлов (бронзы, латуни), алюминиевых сплавов, а также любых поверхностей заготовок: внутренних, наружных, конических, цилиндрических, торцевых и фасонных. Также осуществляется отрезка заготовки, нарезание внутренних и наружных резьб, вытачивания пазов и канавок.</div>
+              <h4>Фрезерные работы</h4>
+              <div>Фрезерные работы проводятся на универсальных фрезерных станках и на станках с ЧПУ, с помощью которых возможно как вертикальное, так и горизонтальное фрезерование, а также фрезерование под разными углами с использованием различных инструментов:</div>
+              <ul>
+ 	              <li>поворотных столов и делительных головок.</li>
+ 	              <li>Фрезерная обработка деталей</li>
+ 	              <li>Фрезерная обработка пресс-форм</li>
+              </ul>
             </div>
-          </div>
+        </section>
 
-        <div class="company-services-right">
-          <div class="services-item discounts">
-            <div class="services-item-title">Скидки</div>
-            <a class="services-link" href="#">на 350 товаров</a>
-          </div>
-          <div class="services-item free-shipping">
-            <div class="services-item-title">Доставка</div>
-            <a class="services-link" href="#">бесплатно</a>
-          </div>
-        </div>
+        <section class="option">
+          <a class="option__headline" name="gear-cutting">Зуборезные работы</a>
+            <div class="option__description">
+              <div>Зуборезные работы включают в себя две основные операции:</div>
+              <div>нарезание червячных передач (шлицевых соединений, глобоидных зацеплений, шевронных зацеплений и т.д.) и конических шестерен, а также нарезание зубчатых колес. Зубчатые колеса могут быть прямозубыми и косозубыми и выполнятся, как с внутренним, так и с наружным зацеплением.</div>
+            </div>
+        </section>
+
+        <section class="option">
+          <a class="option__headline" name="locksmith-work">Слесарные работы</a>
+            <div class="option__description">
+              <ul>
+ 	              <li>Резку металла</li>
+ 	              <li>Опиливание и зачистку металлических деталей</li>
+ 	              <li>Рубка металла</li>
+              </ul>
+            </div>
+        </section>
+
       </div>
-      </section>
-      <section class="container manufacturers">
-        <div class="popular-goods">
-          <h2>популярные товары:</h2>
-          <a class="button" href="#">все популярные товары</a>
+
+
+        <section class="news">
+          <h2>Новый российский токарный станок с ЧПУ</h2>
+            <p>Токарный станок российского производства ТС1625Ф3 является аналогом 16А20Ф3 и представляет собой промышленное оборудование, предназначенное для токарной обработки в полуавтоматическом режиме. На нем ведется обработка наружных и внутренних поверхностей заготовок, представляющих собой тела вращения. Токарный станок позволяет выполнять работы с криволинейными и ступенчатыми профилями любой сложности, а также производить нарезание резьбы. Доступна нарезка правых и левых резьб разных видов — цилиндрических, конических, фронтальных цилиндрическо-конических и других, популярных в России. Шаг резьбы может быть постоянным и переменным, а обработка выполняться и в центрах, и в патроне. Российский токарный станок снабжен системой числового программного управления (ЧПУ). Его конструкция и возможности позволяют отнести к универсальному металлорежущему оборудованию, потребность в котором существует на многих металлообрабатывающих предприятиях в России. Его можно использовать на производстве изделий из стали, чугуна и многих цветных металлов. Данное российское оборудование с ЧПУ хорошо показывает себя, как в единичном производстве, так и серийном.
+            </p>
+        </section>
         </div>
-        <div class="catalog-items">
-          <div class="catalog-item">
-            <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-            <div class="image"><img width="218" height="170" src="img/perforator-3.png" alt="Перфоратор-3"></div>
-            <div class="title">Перфоратор BOSCH BFG 9000</div>
-            <div class="discount">32500 Р.</div>
-            <div class="price">25500 Р.</div>
-          </div>
-          <div class="catalog-item">
-            <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-            <div class="image"><img width="218" height="168" src="img/perforator-1.png" alt="Перфоратор-1"></div>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
-            <div class="discount">22500 Р.</div>
-            <div class="price">15500 Р.</div>
-          </div>
-          <div class="catalog-item">
-            <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-            <div class="image"><img width="218" height="168" src="img/perforator-2.png"  alt="Перфоратор-2"></div>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
-            <div class="discount">30500 Р.</div>
-            <div class="price">25500 Р.</div>
-          </div>
-          <div class="catalog-item">
-            <div class="flag flag-new">новинка</div>
-            <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
-            <div class="image"><img width="218" height="168" src="img/perforator-1.png" alt="Перфоратор-1"></div>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
-            <div class="discount"></div>
-            <div class="price">12500 Р.</div>
-          </div>
-        </div>
-      </section>
-      <section class="container brands">
-        <div class="popular-brands">
-          <h2>популярные производители:</h2>
-          <a class="button" href="#">все производители</a>
-        </div>
-        <ul class="brands-list">
-          <li class="brand bosch"><img src="img/bosch.png" width="126" height="37" alt="Бош"></li>
-          <li class="brand makita"><img src="img/makita.png" width="123" height="40" alt="Макита"></li>
-          <li class="brand de-walt"><img src="img/de-walt.png" width="146" height="44" alt="Девольт"></li>
-          <li class="brand interskol"><img src="img/invalid-name.png" width="200" height="88" alt="Интерскол"></li>
-          <li class="brand hitachi"><img src="img/hitachi.png" width="169" height="31" alt="Хитачи"></li>
-          <li class="brand lg"><img src="img/lg.png" width="121" height="73" alt="Элджи"></li>
-          <li class="brand aeg"><img src="img/aeg.png" width="151" height="96" alt="АЕГ"></li>
-          <li class="brand metabo"><img src="img/metabo.png" width="204" height="69" alt="Метабо"></li>
-        </ul>
-      </section>
-      <section class="services">
-        <div class="container">
-        <h2>сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <!-- <div class="switches-end-tab"> -->
-          <!-- <div class="switches"> -->
-            <div class="tabs">
-              <input class="tab-input tab-input--delivery" id="delivery" type="radio" name="tabs" checked>
-              <label class="tab-label" for="delivery">Доставка</label>
 
-              <input class="tab-input tab-input--guaranty" id="guaranty" type="radio" name="tabs">
-              <label class="tab-label" for="guaranty">Гарантия</label>
-
-              <input class="tab-input tab-input--credit" id="credit" type="radio" name="tabs">
-              <label class="tab-label" for="credit">Кредит</label>
-
-              <div class="tab-content delivery">
-              <h3>Доставка</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-              </div>
-
-              <div class="tab-content guaranty">
-              <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,<br>
-                 а также в случае пожара, спровоцированного его возгаранием,<br>
-                   вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                    сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
-              </div>
-
-              <div class="tab-content credit">
-              <h3>Кредит</h3>
-                <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
-                <a class="tab-content-credit" href="#">Открыть каталог</a>
-              </div>
-            </div>
-          <!-- </div> -->
-      <!-- </div> -->
-      </div>
-      </section>
-      <section class="container company-end-location">
-        <section class="company">
-         <h2>Компания "Техномарт"</h2>
-           <p class="shopping">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-           <p class="delivery">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-           <!-- </p> -->
-           <!-- <p class="choice"> -->
-             Техномарт работает со многими транспортными компаниями:</p>
-             <ul class="cargo-carrier">
-               <li class="carrier-1">Деловые линии</li>
-               <li class="carrier-2">Автотрейдинг</li>
-               <li class="carrier-3">ЖелДорЭкспедиция</li>
-             </ul>
-         <!-- <a class="button" href="#">Подробнее о компании</a> -->
-       </section>
-       <section class="location">
-         <h2>Контакты</h2>
-           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-           <!-- <img src="img/map.png" width="300" height="158" alt="Местонахождение"> -->
-           <a class="contacts-button-map" href="map.html"><img src="img/map.png" width="300" height="158" alt="Местонахождение"></a>
-           <!-- <a class="button" href="#">Заблудились? Напишите нам</a> -->
-       </section>
-     </section>
-     <div class="button-container">
-       <a class="button-more" href="#">Подробнее о компании</a>
-       <a class="button-feedback" href="#">Заблудились? Напишите нам!</a>
-     </div>
     </main>
-    <footer class="footer">
-      <div class="container logo-end-sub-nav">
-        <div class="logo-footer">
-        <a class="">
-          <svg width="138" height="23">
-            <use xlink:href="img/sprite.svg#logo-technomart"></use>
-          </svg>
-        </a>
-      </div>
-        <ul class="sub-nav">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-       </ul>
-     </div>
-     <div class="container address-and-product">
-       <div class="address">
-         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-       </div>
-         <ul class="product">
-           <li><a href="#">Материалы</a></li>
-           <li><a href="#">Техника</a></li>
-           <li><a href="#">Инструмент</a></li>
-           <li><a href="#">Спецпредложения</a></li>
-        </ul>
-      </div>
-      <section class="footer-bottom">
-        <div class="container-bottom">
-        <div class="footer-copirite">
-          <span>© 2010–2019 Компания «Техномарт»</span><br>
-          <span>Все права защищены</span>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="feedback__questions">
+          Остались вопросы?<br>Свяжитесь с нами!
         </div>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">
-            <svg width="26" height="15">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
-            </svg></a>
-          </li>
-          <li><a class="social-button" href="#">
-            <svg width="12" height="22">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
-            </svg></a>
-          </li>
-          <li><a class="social-button" href="#">
-            <svg width="21" height="21">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg></a>
-          </li>
-        </ul>
-        <div class="footer-email">
-          <span>Обратная связь:</span><br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="feedback__copyright copyright">
+          <b class="copyright__text">Пишите:</b>
+          <a class="copyright__link" href="https://ahilla.ru/"></a>
         </div>
-        <div class="footer-link">
-          <span>Разработано —</span><br>
-          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                  <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright-footer">
+          <b class="copyright-footer__text">Разработано:</b>
+          <a class="button copyright-footer__link" href="#">
+          </a>
         </div>
       </div>
-      </section>
     </footer>
 
-    <section class="modal modal-feedback">
-      <button class="modal-close" type="button">Закрыть</button>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="visually-hidden">Обратная связь</h2>
-          <div class="appointment-item">
-            <label for="feedback-name"><p class="feedback-indent">Ваше имя:</p></label>
-            <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </div>
-          <div class="appointment-item">
-            <label for="feedback-email"><p>Ваш e-mail:</p></label>
-            <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
-          </div>
-          <div class="appointment-item">
-            <label for="feedback-mail"><p class="feedback-indent">Текст письма:</p></label>
-
-            <textarea class="feedback-mail-input" id="feedback-mail" rows="4" type="text" name="mail">В свободной форме</textarea>
-          </div>
-          <div class="button-wrapper">
-            <button class="button" type="submit">Отправить</button>
-          </div>
-        </form>
-     </section>
-
-     <section class="modal modal-map">
-       <h2 class="visually-hidden">Как до нас добраться</h2>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
-       <p><img src="img/map-big.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-       <button class="modal-close" type="button">Закрыть</button>
-     </section>
-   </div>
-
-   <script src="js/script.js"></script>
-   <script src="js/glide.min.js"></script>
-   <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>
