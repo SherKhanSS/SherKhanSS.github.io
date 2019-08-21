@@ -1,0 +1,150 @@
+.main-nav {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: normal;
+  background-color: @st;
+
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.main-nav__list {
+  .list-reset();
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -65px;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: inherit;
+  // outline: 1px solid red;
+
+  cursor: pointer;
+  border: none;
+}
+
+ .main-nav--closed .site-list__item {
+   display: none;
+ }
+
+ .main-nav--closed .main-nav__toggle::before {
+   content: "";
+
+   position: absolute;
+   top: 15px;
+   left: 15px;
+
+   width: 40px;
+   height: 4px;
+
+   background-color: @text;
+   box-shadow: 0 10px 0 0 @text, 0 20px 0 0 @text;
+ }
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @hov;
+  box-shadow: 0 10px 0 0 @hov, 0 20px 0 0 @hov;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @st;
+  box-shadow: 0 10px 0 0 @st, 0 20px 0 0 @st;
+}
+
+ .main-nav--opened .main-nav__toggle {
+   top: -50;
+   right: 0;
+   left: auto;
+
+   &::before,
+   &::after {
+     content: "";
+
+     position: absolute;
+     top: 25px;
+     right: 20px;
+
+     width: 30px;
+     height: 4px;
+
+     background-color: @text;
+     // opacity: 0.5;
+   }
+
+   &::before {
+     transform: rotate(45deg);
+     box-shadow: none;
+   }
+
+   &::after {
+     transform: rotate(-45deg);
+   }
+
+   &:hover::before,
+   &:hover::after {
+     background-color: @hov;
+   }
+
+   &:active::before,
+   &:active::after {
+     background-color: @st;
+   }
+}
+
+
+ .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item--active a {
+
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
+  }
+
+@media (max-width: @mobile-width-only) {
+  .main-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    border-top: 1px solid #bfe0ed;
+    border-bottom: 1px solid #bfe0ed;
+    padding-left: 20px;
+  }
+  .main-nav__toggle {
+  display: none;
+}
+  .main-nav--closed .site-list__item {
+  display: block;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    font-size: 20px;
+  }
+
+}
