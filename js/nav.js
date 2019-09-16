@@ -30,6 +30,21 @@ pageMain.addEventListener('click', function() {
   // }
 });
 
+var siteList = navMain.querySelector('.site-list');
+
+siteList.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--opened')) {
+    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add('main-nav--closed');
+    pageHeaderLink.classList.remove('page-header__link--close');
+    pageHeaderWrapper.classList.remove('nav--open');
+  }
+  // else {
+  //   navMain.classList.add('main-nav--closed');
+  //   navMain.classList.remove('main-nav--opened');
+  // }
+});
+
 jQuery("document").ready(function($){
 
 	var nav = $('.page-header__wrapper');
