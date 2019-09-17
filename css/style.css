@@ -832,6 +832,9 @@ img {
   .site-list__item a {
     padding: 27px 20px;
   }
+  .site-list__item a:hover {
+    padding: 26px 20px;
+  }
 }
 .page-main {
   background-color: #e0ddd7;
