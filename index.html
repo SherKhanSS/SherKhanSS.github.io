@@ -356,41 +356,28 @@
     <!-- <script src="js/page-scroller-button.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/jquery.cookie.js"></script>
-    <!-- <script>
-    jQuery("document").ready(function($){
-      $(document).ready(function(){
-        $('.banner-bottom__button').click(function () {
-          $('.banner-bottom').unbind('click');
-          $('.banner-bottom').addClass('visually-hidden');
-        });
-      });
-
-       $('.banner-bottom').click(function() {
-        document.location.href="/index.php?option=com_chronoforms5&chronoform=zapisatsya-na-priem&tmpl=component";
-      });
-    });
-    </script> -->
     <script type="text/javascript">
-      $('.banner-bottom').click(function() {
-       document.location.href="/index.php?option=com_chronoforms5&chronoform=zapisatsya-na-priem&tmpl=component";
-      });
+    $('.banner-bottom').click(function() {
+     document.location.href="/kompleksnye-programmy/eko-po-oms.html";
+     $.cookie("popup", "", { expires:1, path: '/' });
+     $(".banner-bottom").hide();
+    });
 
-      $(document).ready(function(){
-      $(".banner-bottom__button").click(function () {
-      $('.banner-bottom').unbind('click');
-      $.cookie("popup", "", { expires:0, path: '/' });
-      $(".banner-bottom").hide();
-      });
 
-      if ( $.cookie("popup") == null )
-      {
-      setTimeout(function(){
-      $(".banner-bottom").show();
-    }, 4000)
-      }
-      else { $(".banner-bottom").hide();
-      }
-      });
+    $(".banner-bottom__button").click(function () {
+    $('.banner-bottom').unbind('click');
+    $.cookie("popup", "", { expires:1, path: '/' });
+    $(".banner-bottom").hide();
+    });
+
+    if ( $.cookie("popup") == null )
+    {
+    setTimeout(function(){
+    $(".banner-bottom").show();
+  }, 1000)
+    }
+    else { $(".banner-bottom").hide();
+    }
     </script>
   </body>
 </html>
