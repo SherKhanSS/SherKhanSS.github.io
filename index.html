@@ -377,6 +377,7 @@
 
       $(document).ready(function(){
       $(".banner-bottom__button").click(function () {
+      $('.banner-bottom').unbind('click');
       $.cookie("popup", "", { expires:0, path: '/' });
       $(".banner-bottom").hide();
       });
