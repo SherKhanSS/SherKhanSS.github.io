@@ -1,0 +1,855 @@
+.page-main {
+  background-color: @fon;
+  padding-top: 190px;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 85px;
+  }
+}
+
+.page-main__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+      display: block;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      z-index: 9;
+      margin-left: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-logo__wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__title {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 120px;
+  margin-top: -120px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 48px;
+  }
+}
+
+.cutaway {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 230px;
+  padding-bottom: 30px;
+
+  background-image: url("../img/background-2000x1333.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  box-shadow: inset 0px 5px 27px -6px rgba(0,0,0,0.3);
+
+  .cutaway__title {
+    font-size: 30px;
+    font-weight: 900;
+    color: @pink-text;
+    text-align: center;
+    background-color: @white;
+
+    padding: 15px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .cutaway__description {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+  }
+
+  .cutaway__button {
+    font-size: 30px;
+    font-weight: 900;
+    color: @white;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 15px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    background-color: @pink-fon;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    align-items: center;
+    padding-bottom: 120px;
+    position: relative;
+
+    .cutaway__title {
+      font-size: 44px;
+      padding-top: 12px;
+      width: 610px;
+      border-radius: 40px;
+      margin-bottom: 15px;
+    }
+
+    .cutaway__description {
+      border-radius: 30px;
+      margin-bottom: 15px;
+    }
+
+    .cutaway__button {
+      border-radius: 30px;
+      width: 290px;
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {}
+
+}
+
+@media (min-width: @tablet-width) {
+
+.cutaway::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: calc(50% - 34px);
+
+  width: 68px;
+  height: 68px;
+
+  background-image: url("../img/onli_tri_3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+.cutaway::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 50px);
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.34);
+}
+}
+
+.about-us {
+  .flex-mobile();
+  padding: 50px 15px 60px 15px;
+  background-color: @white;
+
+  .about-us__title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .about-us__description-first {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 190px;
+  }
+
+  .about-us__description-second {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    padding-top: 90px;
+    background-image: url("../img/background_cirles-2000x1125.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    .about-us__description-first {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .about-us__description-second {
+      width: 970px;
+    }
+  }
+}
+
+.pay {
+  .flex-mobile();
+  background-color: rgba(242, 242, 242, 1);
+  padding: 40px 0px 40px 0px;
+
+  background-image: url("../img/background_Baby.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  .pay__title {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+
+  .pay__extra {
+    font-size: 11px;
+    background-color: @white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 15px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 8px 32px -14px rgba(0,0,0,0.3);
+
+    .pay__title {
+      width: 100%;
+    }
+
+    .pay__extra {
+      width: 470px;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 23px;
+      border-radius: 30px;
+    }
+  }
+}
+
+.plus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 15px 115px 15px;
+  position: relative;
+
+  background-image: url("../img/background_cirles-2000x1125.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  .plus__title {
+    margin-top: -100px!important;
+    margin-bottom: 25px;
+  }
+
+  .plus__list {
+    .list-reset();
+    .flex-mobile();
+
+    .plus__item {
+      .flex-mobile();
+      text-align: center;
+      width: 240px;
+      margin-bottom: 30px;
+
+      .plus__description {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: -5px;
+
+        span {
+          font-size: 14px;
+          font-weight: normal;
+          color: #b3a281;
+        }
+      }
+    }
+  }
+
+  .plus__title:nth-child(2n) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-top: 0px;
+
+    .plus__title {
+      margin-top: -40px!important;
+      margin-bottom: 40px;
+    }
+
+    .plus__list {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    .plus__list {
+      width: 100%;
+      max-width: 1400px;
+      justify-content: space-around;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.plus::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: calc(50% - 34px);
+
+  width: 68px;
+  height: 68px;
+
+  background-image: url("../img/onli_tri_1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+.plus::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 50px);
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.34);
+  z-index: 1;
+}
+
+.sweetmom {
+  .flex-mobile();
+  padding-top: 85px;
+  padding-bottom: 55px;
+  box-shadow: inset 0px 8px 32px -14px rgba(0,0,0,0.3);
+
+  background-image: url("../img/background_Baby.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  .sweetmom__title {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    span {
+      color: @pink-text;
+    }
+  }
+
+  .sweetmom__description {
+    text-align: center;
+
+    span {
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 32px;
+      color: @pink-text;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    .sweetmom__title {
+      font-size: 90px;
+    }
+
+    .sweetmom__description {
+      font-size: 30px;
+
+      span {
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+  }
+}
+
+.reviews {
+  .flex-mobile();
+  padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: @white;
+  position: relative;
+  z-index: -1;
+
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+
+  .reviews__cards {
+    .flex-mobile();
+    position: relative;
+    z-index: -1;
+
+    .reviews__card {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 60px;
+      margin-bottom: 15px;
+      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.3);
+
+      .reviews__card-top {
+        display: flex;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: -1;
+
+          .reviews__card-name {
+            font-size: 16px;
+            font-weight: 900;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+
+          .reviews__card-description {
+            font-style: italic;
+            font-weight: 300;
+          }
+        }
+
+        .reviews__card-top::after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+
+          width: 100%;
+          height: 1px;
+
+          background-color: #cccccc;
+        }
+      }
+
+      .reviews__card-bottom {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-style: italic;
+
+        .reviews__card-comment {
+          padding-top: 10px;
+          color: rgba(190, 176, 149, 1);
+        }
+      }
+    }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/background_cirles-2000x1125.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    .reviews__cards {
+      flex-direction: row;
+      max-width: 1200px;
+    }
+
+    .reviews__card {
+      margin-right: 15px;
+    }
+
+    .reviews__card:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .reviews__card {
+      margin-right: 30px;
+    }
+
+    .reviews__card:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background-color: @white;
+  position: relative;
+
+  .contacts__title {
+    margin-bottom: 40px;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+
+    .contacts__item-phone,
+    .contacts__item-adress {
+      margin-bottom: 25px;
+    }
+
+    .contacts__name,
+    .contacts__adress-top,
+    .contacts__mail-top {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .contacts__name::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -38px;
+
+      width: 26px;
+      height: 26px;
+
+      background-image: url("../img/color_phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    .contacts__adress-top::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -38px;
+
+      width: 26px;
+      height: 26px;
+
+      background-image: url("../img/locations.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    .contacts__mail-top::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -38px;
+
+      width: 26px;
+      height: 26px;
+
+      background-image: url("../img/mail.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    .contacts__phone {
+      font-size: 18px;
+      font-weight: 900;
+      text-decoration: none;
+      color: @pink-text;
+    }
+
+    .contacts__adress {
+      font-size: 16px;
+      text-decoration: underline;
+    }
+
+    .contacts__mail {
+      font-size: 16px;
+      color: @black;
+    }
+  }
+
+  .contacts__map iframe {
+    border-radius: 30px;
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+    max-width: 1100px;
+  }
+
+  @media (min-width: @tablet-width) {
+    box-shadow: inset 0px 8px 32px -14px rgba(0,0,0,0.3);
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    .contacts__items {
+      flex-direction: row;
+      padding-left: 90px;
+      margin-bottom: 10px;
+
+      .contacts__item-phone,
+      .contacts__item {
+        width: 50%;
+      }
+    }
+
+    .contacts__map {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .contacts__items {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      justify-content: space-between;
+
+      .contacts__item-phone {
+        width: 33%;
+      }
+
+      .contacts__item {
+        display: flex;
+        justify-content: space-between;
+        width: 66%;
+
+        .contacts__item-adress,
+        .contacts__item-mail {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: calc(50% - 34px);
+
+  width: 68px;
+  height: 68px;
+
+  background-image: url("../img/onli_tri_2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 50px);
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.34);
+}
+
+
+.feedback {
+  .flex-mobile();
+  padding: 15px;
+  padding-top: 80px;
+  padding-bottom: 35px;
+
+  background-image: url("../img/background_Baby.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  box-shadow: inset 0px 8px 32px -14px rgba(0,0,0,0.3);
+
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+
+  .feedback__form {
+    .flex-mobile();
+
+    .feedback__contacts {
+      width: 100%;
+
+      input {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        padding-left: 70px;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
+
+      .feedback__name,
+      .feedback__email,
+      .feedback__tel {
+        position: relative;
+      }
+
+      .feedback__name::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 32px;
+
+        width: 26px;
+        height: 26px;
+
+        background-image: url("../img/user_icon_black.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        z-index: 1;
+      }
+
+      .feedback__email::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 32px;
+
+        width: 26px;
+        height: 26px;
+
+        background-image: url("../img/mail_icon_black.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        z-index: 1;
+      }
+
+      .feedback__tel::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 32px;
+
+        width: 26px;
+        height: 26px;
+
+        background-image: url("../img/mobile_icon_black.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        z-index: 1;
+      }
+
+    }
+
+    .feedback__checkbox {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .feedback__checkbox::before {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0px;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: #afa3a3;
+    }
+
+    .feedback__checkbox label {
+      font-size: 16px;
+
+      .feedback__link {
+        color: @black;
+      }
+    }
+
+    .feedback__button {
+      font-size: 24px;
+      font-weight: 900;
+      color: @white;
+      background-color: @pink-fon;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .feedback__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    .feedback__form {
+      width: 100%;
+      max-width: 1300px;
+
+    .feedback__contacts {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      input {
+        width: 350px;
+      }
+    }
+
+    .feedback__button {
+      width: 380px;
+    }
+    }
+  }
+}
+
+.page-footer {
+  padding: 15px;
+  background-color: @white;
+
+  .page-footer__copyright {
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
