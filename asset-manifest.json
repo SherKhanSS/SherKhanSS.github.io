@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ef59cdc.chunk.css",
+    "main.js": "/static/js/main.66177d48.chunk.js",
+    "main.js.map": "/static/js/main.66177d48.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e3ef3a96.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e3ef3a96.js.map",
+    "static/js/2.38f037fe.chunk.js": "/static/js/2.38f037fe.chunk.js",
+    "static/js/2.38f037fe.chunk.js.map": "/static/js/2.38f037fe.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3eb5d97d8d3326180e1fb4a2a15104e1.js": "/precache-manifest.3eb5d97d8d3326180e1fb4a2a15104e1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1ef59cdc.chunk.css.map": "/static/css/main.1ef59cdc.chunk.css.map",
+    "static/js/2.38f037fe.chunk.js.LICENSE.txt": "/static/js/2.38f037fe.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/SuisseIntl-Regular.8f1f7420.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3ef3a96.js",
+    "static/js/2.38f037fe.chunk.js",
+    "static/css/main.1ef59cdc.chunk.css",
+    "static/js/main.66177d48.chunk.js"
+  ]
+}
