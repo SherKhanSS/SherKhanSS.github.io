@@ -361,12 +361,18 @@ body {
 }
 
 .train-wrap {
-  height: 100px;
+  height: 76px;
   width: 1486px;
   animation-duration: 3s;
   animation-name: loader;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+}
+
+.rail-wrap {
+  height: 24px;
+  width: 1486px;
+  margin-top: -76px;
 }
 
 @keyframes loader {
